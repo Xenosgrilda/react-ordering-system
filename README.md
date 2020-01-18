@@ -23,12 +23,12 @@ tela do sistema.
 
 ## Processo de desenvolvimento
 Aqui abordaremos como foi feito o processo de desenvolvimento.
-Como os requisitos já estavam bem definidos, decidi começar
-com a prototipação das telas e pensar em como organizar os componentes e
+Como os requisitos já estavam bem definidos, comecei
+com a prototipação das telas e em organizar os componentes e
 o estado do projeto.
 
 ### Protótipo
-Para fazer o protótipo do projeto, usei a ferramenta Figma, que é
+Para fazer o protótipo do projeto, foi usado a ferramenta Figma, que é
 gratuíta e muito poderosa.
 
 O projeto Figma pode ser encontrado nesse [link](https://www.figma.com/file/Muy6HRxFgSD3GZCOM0yQhv/Ordering-System?node-id=0%3A1).
@@ -52,5 +52,8 @@ Depois as dependencas para o Redux com React foram adicionadas:
 
 Mesmo esse sendo um projeto pequeno decidi adicionar o redux-thun para
 caso em algum momento seja necessário expandi-lo.
+
+Após a criação do projeto e do protótipo, comecei a desenvolver o UI dos
+componentes de acordo com o protótipo.
 
 node node_modules/react-scripts/scripts/start.js
