@@ -1,0 +1,17 @@
+/* Styling for Header component */
+
+.kabum-nav-title {
+    position: relative;
+    top: 5px;
+    font-family: Roboto, "Arial Black", monospace ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    color: black;
+}
+
+.kabum-navbar {
+    padding: 5px;
+    border: 2px solid black;
+    background-color: white;
+}
