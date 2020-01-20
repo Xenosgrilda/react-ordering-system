@@ -1,0 +1,24 @@
+.kabum-page-products {
+    width: 100%;
+    padding: 50px;
+}
+
+.kabum-page-products-container{
+    margin-left: -20px;
+    margin-right: -20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+@media all and (max-width: 1600px){
+    .kabum-page-products-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media all and (max-width: 1350px){
+    .kabum-page-products-container{
+        grid-template-columns: 1fr;
+    }
+}

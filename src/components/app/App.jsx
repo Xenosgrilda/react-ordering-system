@@ -5,7 +5,7 @@ import Page from "./page/Page";
 
 function App() {
   return (
-    <div className='page-container'>
+    <div className='kabum-app-container'>
       <Header/>
       <Page/>
     </div>

@@ -1,0 +1,47 @@
+.kabum-product {
+    height: 250px;
+    margin: 20px;
+    border: 1px solid black;
+    padding:  10px 0 10px 15px;
+}
+
+.kabum-product .kabum-image-container{
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+}
+
+.kabum-image-container .kabum-image{
+    vertical-align: top;
+    object-fit: scale-down;
+    height: 200px;
+    width: 200px;
+}
+
+.kabum-product .kabum-product-content{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+}
+
+.kabum-product-content .kabum-product-flex{
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.kabum-product-price{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+@media all and (min-width: 1600px){
+    .kabum-image-container .kabum-image{
+        height: 150px;
+        width: 150px;
+    }
+}
