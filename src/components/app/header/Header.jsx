@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import './Header.css';
 import navBrand from '../../../images/brand-logo.png';
 import shoppingCart from '../../../images/shopping-car-icon.png';

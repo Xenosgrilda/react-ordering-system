@@ -1,6 +1,9 @@
 .kabum-page-container{
+    display: flex;
     flex-grow: 1;
+    flex-flow: row nowrap;
     min-width: 100%;
     background-color: white;
     border: 2px solid black;
+    border-collapse: collapse;
 }
