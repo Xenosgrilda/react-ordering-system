@@ -1,4 +1,6 @@
 import React from "react";
+import { useSelector } from "react-redux";
+
 import './Filter.css';
 
 import TextInputIcon from "../../forms/TextInputIcon";
@@ -13,12 +15,14 @@ export default class Filter extends React.Component {
                 search: {
                     value: ''
                 },
-                brands: props.brands.map( brand => { return { name: brand.toLowerCase(), brand: brand, value: false} } )
+                brands: props.brands.map( brand => {
+                    return { name: brand.toLowerCase(), brand: brand, value: false}
+                })
             }
         };
     }
 
-    changeHandler(e){
+    changeInputTextHandler(e){
         const { name, value } = e.target;
 
         this.setState({
@@ -68,7 +72,7 @@ export default class Filter extends React.Component {
                 <div className='form-group mt-4'>
                     <label className='mb-2' htmlFor='search-item'>Buscar</label>
                     <TextInputIcon name='search' value={this.state.search}
-                       onChange={this.changeHandler} id="search-item" placeholder="GeForce GTX..."/>
+                       onChange={this.changeInputTextHandler} id="search-item" placeholder="GeForce GTX..."/>
                 </div>
 
                 <div className='form-group mt-4'>

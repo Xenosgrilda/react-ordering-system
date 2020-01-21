@@ -49,14 +49,10 @@ export default class Page extends React.Component {
         }
     };
 
-    onFilterChange = filterForm => {
-
-    };
-
     render() {
         return (
             <div className='kabum-page-container mt-4'>
-                <Filter brands={['Samsung', 'Acer', 'Nvidia', 'Asus', 'Gigabyte']} onFilterChange={this.onFilterChange}/>
+                <Filter brands={['Samsung', 'Acer', 'Nvidia', 'Asus', 'Gigabyte']} />
                 <Products header='Produtos' products={this.state.productList}/>
             </div>
         )

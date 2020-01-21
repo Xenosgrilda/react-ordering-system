@@ -10,7 +10,7 @@ export default function Products(props) {
             <hr className='kabum-separator'/>
 
             <div className='kabum-page-products-container'>
-                { props.products.map( prod => <Product name={prod.name} price={prod.price} imgSrc={prod.imgSrc}/> ) }
+                { props.products.map( prod => <Product key={prod.name} name={prod.name} price={prod.price} imgSrc={prod.imgSrc}/> ) }
             </div>
         </div>
     )
