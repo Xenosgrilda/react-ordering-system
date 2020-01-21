@@ -1,7 +1,8 @@
-import {ADD_PRODUCT_CART, REMOVE_PRODUCT_CART} from "../actions/products-action";
+import {FILTER_PRODUCTS, GET_PRODUCTS} from "../actions/products.action";
 
 const initialProductState = {
-    productListFilter: {
+    products: [],
+    filter: {
         name: '',
         brands: []
     }
@@ -9,12 +10,15 @@ const initialProductState = {
 
 const productReducer = (state = initialProductState, action) => {
     switch (action.type) {
-        case ADD_PRODUCT_CART:
-            return null;
-        case REMOVE_PRODUCT_CART:
-            return null;
+        case FILTER_PRODUCTS:
+            return state;
+        case GET_PRODUCTS:
+            return {
+                ...state,
+                products: action.payload
+            };
         default:
-            return null;
+            return state;
     }
 };
 

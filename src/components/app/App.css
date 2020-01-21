@@ -1,9 +1,10 @@
 .kabum-app-container{
-    padding: 20px 45px;
-    background-color: #D8F6FF;
     display: flex;
     flex-flow: column nowrap;
     height: 100vh;
+    padding: 20px 45px;
+    background-color: #D8F6FF;
+    overflow: auto;
 }
 
 .kabum-separator{
